@@ -1,0 +1,484 @@
+
+*   {
+        margin: 0;
+        padding: 0;
+    }
+
+    header,
+    main,
+    footer,
+    nav,
+    aside,
+    section {
+        display: block;
+    }
+
+    body {
+        background-color: #ffffff;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    #wrapper {
+        margin: 0px 125px;
+    }
+
+    #logo {
+       
+        padding: 30px;   
+    }
+
+    main {
+        width: 100%;
+    }
+    main {
+        display: block;
+        width: 100%;
+        height: 555px;
+        left: 0px;
+        top: 123px;
+    }
+
+    .bkg-color {
+        display: flex;
+        width: 100%;
+        height: 555px;
+        left: 0px;
+        top: 123px;
+        background: #F9BDBD;
+    }
+
+    .bkg-layout{
+        margin-left: 40px;
+        margin-top: 83px;
+        background-image: url("../img/img2.png");
+        background-origin: content-box;
+        background-repeat: no-repeat;
+    }
+
+    .cover-profile{
+        width:388px;
+        height:470px;
+        padding-left: 40px;
+        
+    }
+
+    main h1 {
+        width: 448px;
+        height: 98px;
+        left: 506px;
+        top: 206px;
+        font-family: 'Nunito';
+        font-style: normal;
+        font-weight: 800;
+        font-size: 36px;
+        line-height: 49px;
+        color: #3E3F43;
+    }
+
+    main h2 {
+        left: 506px;
+        top: 320px;
+        font-family: 'Nunito';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 33px;
+        color: #000000;
+    }
+   
+    .bkg-layout {
+        display: flex;
+        height: 100%;
+    }
+      
+    #cover-profile {
+        width: 30%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        float: left;
+    }
+      
+    #opening-sentence-about-me {
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        float: right;
+
+    }
+      
+    #opening-sentence-about-me h1 {
+        font-size: 50px;
+        margin-bottom: 50px;
+    }
+      
+    #opening-sentence-about-me h2 {
+        font-size: 20px;
+        margin-top: 30px;
+    }
+      
+/* About Section */
+    .about-section {
+        margin-top: 90px;
+        width: 70%;
+        margin-bottom: 90px;
+    }
+
+    .about-me {
+        left: 40px;
+        top: 702px;
+        font-style: normal;
+        font-weight: 100;
+        font-size: 18px;
+        line-height: 40px;
+        color: #000000;
+        
+    } 
+
+/* About Section */
+
+/* Exercises Section */
+    .flex-container-exe{
+    
+        margin-top:55px;
+        margin-left: 40px;
+    }
+
+    .section-title {
+        font-size: 26px;
+        font-weight: 500;
+        
+        font-family: 'Rubik', sans-serif;
+    }
+
+    .ex{
+        display: flex;
+       /* flex-direction: column;
+        justify-content: space-around;
+        align-items: center;*/
+        margin-top: 24px;
+        
+    }
+
+    .Exercises1{
+        background: #FDEDE5;
+        border-radius: 8px;
+        width: 200px;
+        height: 262px;
+      
+    } 
+
+    .exercises-container-txt1 {
+        margin-top: 25px;
+        margin-left: 24px;
+        line-height: 40px;
+        font-size: 16px;
+        font-family: 'Rubik', sans-serif;
+        font-weight: 500;
+        color: #000000;
+    }
+
+    
+    .exercises-container1 {
+        border-radius: 50%;
+        margin-top: 24px;
+        margin-left: 24px;
+    }
+
+    
+    .exercises-button1 {
+        margin-top:32px;
+        margin-left: 24px;
+        background-color: white;
+        border-radius: 30px;
+        border: none;
+        cursor: pointer;
+        width:120px;
+        height: 40px; 
+    }
+
+    .exercises-button1:hover{
+        
+        background: #000000;
+        cursor: pointer;
+        color:#FDEDE5;
+    }
+
+    .Exercises2{
+        background: #EBF1FF;
+        border-radius: 8px;
+        width: 200px;
+        height: 262px;
+        margin-left: 24px;
+      
+    } 
+
+    .Exercises2 h5 {
+        margin-top: 25px;
+        margin-left: 24px;
+        line-height: 40px;
+        font-size: 16px;
+        font-family: 'Rubik', sans-serif;
+        font-weight: 500;
+        color: #000000;
+    }
+    
+    .Exercises2 img {
+        border-radius: 50%;
+        margin-top: 24px;
+        margin-left: 24px;
+    }
+
+    .Exercises2 button {
+        margin-top:32px;
+        margin-left: 24px;
+        background-color: white;
+        border-radius: 30px;
+        border: none;
+        cursor: pointer;
+        width:120px;
+        height: 40px; 
+    }
+
+    .exercises-button2:hover{ 
+        background: #000000;
+        cursor: pointer;
+        color:#EBF1FF;
+    }
+
+    .Exercises3{
+        background: #EBFFEC;
+       
+        border-radius: 8px;
+        width: 200px;
+        height: 262px;
+        margin-left: 24px;
+    } 
+
+    .Exercises3 h5{
+        margin-top: 25px;
+        margin-left: 24px;
+        line-height: 40px;
+        font-size: 16px;
+        font-family: 'Rubik', sans-serif;
+        font-weight: 500;
+        color: #000000;
+    }
+
+    .Exercises3 img{
+        border-radius: 50%;
+        margin-top: 24px;
+        margin-left: 24px;
+    }
+
+    .Exercises3 button {
+        margin-top:32px;
+        margin-left: 24px;
+        background-color: white;
+        border-radius: 30px;
+        border: none;
+        cursor: pointer;
+        width:120px;
+        height: 40px;
+        
+    }
+
+    .exercises-button3:hover{
+        background: #000000;
+        cursor: pointer;
+        color:#EBFFEC;   
+    }
+
+    .Exercises4{
+        background:#FFEBFC;
+        border-radius: 8px;
+        width: 200px;
+        height: 262px;
+        margin-left: 24px;
+    } 
+
+    .Exercises4 h5{
+        margin-top: 25px;
+        margin-left: 24px;
+        line-height: 40px;
+        font-size: 16px;
+        font-family: 'Rubik', sans-serif;
+        font-weight: 500;
+        color: #000000;
+    }
+    
+    .Exercises4 img{
+        border-radius: 50%;
+        margin-top: 24px;
+        margin-left: 24px;
+    }
+
+    .Exercises4 button{
+        margin-top:32px;
+        margin-left: 24px;
+        background-color: white;
+        border-radius: 30px;
+        border: none;
+        cursor: pointer;
+        width:120px;
+        height: 40px;
+    }
+
+    .exercises-button4:hover{
+        background: #000000;
+        cursor: pointer;
+        color:#FFEBFC;
+    }
+
+    .Exercises5{
+        background: #FFFEEB;
+        border-radius: 8px;
+        width: 200px;
+        height: 262px;
+        margin-left: 24px;
+      
+    } 
+
+    .Exercises5 h5 {
+        margin-top: 25px;
+        margin-left: 24px;
+        line-height: 40px;
+        font-size: 16px;
+        font-family: 'Rubik', sans-serif;
+        font-weight: 500;
+        color: #000000;
+    }
+    
+    .Exercises5 img {
+        border-radius: 50%;
+        margin-top: 24px;
+        margin-left: 24px;
+    }
+
+    .Exercises5 button {
+        margin-top:32px;
+        margin-left: 24px;
+        background-color: white;
+        border-radius: 30px;
+        border: none;
+        cursor: pointer;
+        width:120px;
+        height: 40px;  
+    }
+
+    .exercises-button5:hover{
+        background: #000000;
+        cursor: pointer;
+        color:#FFFEEB;
+    }
+    
+ /*  .Exercises:nth-child(1) {
+        background-color: #FDEDE5;
+        
+    }
+    .Exercises:nth-child(2) {
+        background-color: #EBF1FF;
+        
+    }
+
+    .Exercises:nth-child(3) {
+        background-color: #EBFFEC;
+    }
+
+    .Exercises:nth-child(4) {
+        background-color: #FFEBFC;
+    }
+
+    .Exercises:nth-child(5) {
+        background-color:  #FFFEEB;
+    }
+    /* Exercises Section */
+
+
+    /* Programming Section */
+    #programming-languages {
+        margin-top: 90px;
+    }
+    .programming-languages-links {
+        margin-bottom: 7px;
+    }
+    /* Programming Section */
+
+    /* Your Choice Section */
+    #Your-choice {
+        margin-top: 90px;
+        margin-bottom: 90px;
+    }
+    
+    .yourchoice-bkg {
+        display: block;
+        width: 100%;
+        height: 508px;
+        left: 0px;
+        top: 1120px;
+        background: #F9BDBD;
+    }
+
+    .yourchoice-p {
+        margin: 25px;
+        padding: 125px;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    /* Your Choice Section */
+    #follow-me-social-section {
+        width: 81px;
+        height: 25px;
+        left: 40px;
+        top: 2731px;
+        font-family: 'Nunito';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 25px;
+        color: #333333;
+    }
+    
+    footer {
+        margin-top: 40px;
+        bottom: 0;
+        width: 100%;
+        height: 250px;
+        background-color: #f2f2f2;
+    }
+
+    #follow-me-social-section {
+        padding: 50px;
+        margin: 10px;
+    }
+
+    #follow-me-social-section h6 {
+        font-size: 22px;
+        width: 150px;
+        margin-bottom: 10px;
+    }
+
+    .social-links {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+
+    .social-links a {
+        color: rgb(119, 118, 118);
+    }
+
+    .all-rights-reserved {
+       margin-top: 20px;
+        font-family: 'Nunito';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 10px;
+        color: #8D8D8D;
+    }
+    
