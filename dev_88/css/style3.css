@@ -496,6 +496,10 @@
         line-height: 32px;
         color: #000000;
     }
+    .desktop-text05:hover {
+        color: #C4C4C4;
+        text-decoration: MIX;
+    }  
     .desktop-text07 {
         position: absolute;
         left: 33.84%;
@@ -509,6 +513,10 @@
         line-height: 32px;
         color: #000000;
     }
+    .desktop-text07:hover {
+        color: #C4C4C4;
+        text-decoration: STAIRS;
+    }  
     .desktop-text09 {
         position: absolute;
         left: 86.87%;
@@ -522,6 +530,10 @@
         line-height: 32px;
         color: #000000;
     }
+    .desktop-text09:hover {
+        color: #C4C4C4;
+        text-decoration: DYNAMIC;
+    }  
     .left-desk-mix a {
         color: #000000;
     }
@@ -543,5 +555,17 @@
         font-family: 'Amiko';
         color: #000000;
         font-size: 24px;
+    }
+    .left-desk-mix:hover {
+        color: #C4C4C4;
+        text-decoration: MIX;
+    }
+    .left-desk-stairs:hover {
+        color: #C4C4C4; 
+        text-decoration: STAIRS;
+    }
+    .left-desk-dynamic:hover {
+        color: #C4C4C4;
+        text-decoration: DYNAMIC;
     }
 /* end->frame - general*/
