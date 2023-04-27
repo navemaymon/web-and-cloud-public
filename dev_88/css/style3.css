@@ -361,7 +361,7 @@
         height: 1624px;
         background: #FFFFFF;
     }
-    .desktop-square-black {
+    #desktop-square-black {
         position: absolute;
         width: 80px;
         height: 80px;
@@ -416,21 +416,40 @@
         z-index: 2;
         background: #E5E5E5;
     }
+    #cards_black {
+        position: absolute;
+        left: 34%;
+        top: 11%;
+        z-index: 4;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .card {
+      
+        background: rgb(0, 0, 0);
+        margin: 20px;
+    }
+    .color {
+        color: #ffffff;
+    }
     @media all and (max-width:550px) {
         .desktop-rectangle {
             width: 500px;
             height: 123px;
             left: 0px;
             top: 0px;
+            width: 100%;
             background: #F2E9E9;
+            overflow: hidden;
         }
         .right-side-rectangle {
             display: none;
         }
-        .desktop-square-black {
+        #desktop-square-black {
+            margin-right: 200px;
             width: 80px;
             height: 80px;
-            left: 380px;
+            left: 400px;
             top: 21px;
             background: linear-gradient(0deg, #000000, #000000), #000000;       
         }
@@ -461,13 +480,32 @@
             position: absolute;
             width: 500px;
             height: 474px;
+            width: 100%;
             background-color: #c0a699;;
         }
         .bottom-rectangel {
             position: absolute;
             height: 41px;
             width: 500px;
+            width: 100%;
             background: #000000;
+        }
+
+        #cards_black {
+            position: absolute;
+            left: 48px;
+            top: 308px;
+            z-index: 4;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .card {
+          
+            background: rgb(0, 0, 0);
+            margin: 20px;
+        }
+        .color {
+            color: #ffffff;
         }
     }
 /* start-> frame - general*/
@@ -538,7 +576,7 @@
         color: #000000;
     }
     .left-desk-stairs a {
-        color: #000000;
+        color: #000000; 
     }
     .left-desk-dynamic a {
         color: #000000;
@@ -556,16 +594,18 @@
         color: #000000;
         font-size: 24px;
     }
-    .left-desk-mix:hover {
+    .left-desk-mix a:hover {
         color: #C4C4C4;
         text-decoration: MIX;
     }
-    .left-desk-stairs:hover {
+    .left-desk-stairs a:hover {
         color: #C4C4C4; 
         text-decoration: STAIRS;
     }
-    .left-desk-dynamic:hover {
+    .left-desk-dynamic a:hover {
         color: #C4C4C4;
         text-decoration: DYNAMIC;
     }
 /* end->frame - general*/
+/*start-> memoryGame*/
+
