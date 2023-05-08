@@ -1,0 +1,88 @@
+.formG {
+    background-color: #FDFDFD;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+    font-family: Arial, sans-serif;
+    margin: 20px auto;
+    max-width: 800px;
+    padding: 20px;
+    position: relative;
+  }
+  .formG .header {
+    background-color: #C5D2C6;
+    border-radius: 10px 10px 0px 0px;
+    color: #FFF;
+    padding: 20px;
+    text-align: center;
+  } 
+  .formG .header h1 {
+    margin: 0px;
+  }
+  .formG .page {
+    border-bottom: 1px solid #E8E8E8;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+  }
+  .formG .page:last-of-type {
+    border-bottom: none;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+  }
+  .formG .title {
+    border-bottom: 1px solid #E8E8E8;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+  }
+  .formG .title h2 {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0px;
+  }
+  .formG .inputForm {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  .formG .inputForm label {
+    flex-basis: 100px;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  .formG .inputForm input,
+  .formG .inputForm select,
+  .formG .inputForm textarea {
+    border: 1px solid #E8E8E8;
+    border-radius: 5px;
+    font-size: 16px;
+    padding: 5px;
+    width: 100%;
+  }
+  .formG .inputForm select {
+    cursor: pointer;
+  }
+  .formG .inputForm textarea {
+    resize: none;
+  }
+  .formG .button-group {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  .formG input[type="submit"] {
+    background-color: #C5D2C6;
+    border: none;
+    border-radius: 5px;
+    color: #FFF;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 20px;
+  }
+  .formG input[type="submit"]:hover {
+    background-color: #C5D2C6;
+  }
+  .formG input[type="radio"], input[type="checkbox"], input[type="temper"]:hover{
+    cursor: pointer;
+  }
+  
