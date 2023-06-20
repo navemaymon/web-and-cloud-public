@@ -1,14 +1,14 @@
 // מהתרגול שעשינו עם קרן
 function showData(data) {
-	document.querySelector("h1").innerHTML = `${data.bookList}`;
+	document.querySelector("h1").innerHTML = `${data.category}`;
 	const ulFrag = document.createDocumentFragment();	
-	for (const key in data.bookList){
+	for (const key in data.category){
 		const li = document.createElement('li');
-		sHtml = `<a href='bookweek.php?bookId=${data.bookList[key].id}'>${data.bookList[key].name}</a>`;
+		sHtml = `<a href='bookweek.php?bookId=${data.category[key].id}'>${data.category[key].name}</a>`;
 		li.innerHTML = sHtml;
 		ulFrag.appendChild(li);
 	} 	
-	document.getElementById("dataServices").appendChild(ulFrag);
+	document.getElementById("dropdown-menu").appendChild(ulFrag);
 }
 	
 	fetch("data/category.json")

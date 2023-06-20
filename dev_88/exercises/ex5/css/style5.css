@@ -1,7 +1,4 @@
 .card-img-top {
-    height: 300px; 
-    object-fit: cover;
-  }
-#Almendra {
-    font-family: 'Almendra Display', cursive;
+  height: 300px; 
+  object-fit: cover;
 }
