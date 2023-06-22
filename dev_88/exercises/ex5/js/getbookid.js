@@ -1,17 +1,18 @@
 // מהתרגול שעשינו עם קרן
 function showData(data) {
-	document.querySelector("h1").innerHTML = `${data.category}`;
+	// document.querySelector("h1").innerHTML = `${data.category}`;
 	const ulFrag = document.createDocumentFragment();	
 	for (const key in data.category){
 		const li = document.createElement('li');
-		sHtml = `<a href='bookweek.php?bookId=${data.category[key].id}'>${data.category[key].name}</a>`;
+		sHtml = `<a class="dropdown-item" href='index.php?category="${data.category[key]}"'>${data.category[key]}</a>`;
 		li.innerHTML = sHtml;
 		ulFrag.appendChild(li);
 	} 	
-	document.getElementById("dropdown-menu").appendChild(ulFrag);
-}
+	document.getElementById("dropmenu").appendChild(ulFrag);
 	
+}
 	fetch("data/category.json")
 		.then(response => response.json())
 		.then(data => showData(data));
+	
 	
