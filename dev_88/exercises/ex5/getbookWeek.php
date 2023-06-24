@@ -1,5 +1,6 @@
 <?php
   include 'db.php';
+  include 'config.php';
   $query  = "SELECT * FROM tbl_88_books WHERE id=".$_GET["bookId"];
   $result = mysqli_query($connection, $query);
   if(!$result) { 
