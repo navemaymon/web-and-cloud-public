@@ -8,7 +8,6 @@ function showData(data) {
 		ulFrag.appendChild(li);
 	} 	
 	document.getElementById("dropmenu").appendChild(ulFrag);
-	
 }
 	fetch("data/category.json")
 		.then(response => response.json())

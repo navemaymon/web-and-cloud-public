@@ -18,13 +18,6 @@
   die("can not connect to the DATA BASE");
   }
 ?>
-<?php if (isset($_GET['category'])) {
-                echo $showData;
-      }
-      else {
-        echo '';
-          } 
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -66,30 +59,13 @@
   </nav>
   <main>
   <div class="container">
-  <br>
-  <h2>Recommended books for you</h2>
-  <br>
+  <br><h2>Recommended books for you</h2><br>
   <h5>Select a category</h5>
   <div class="dropdown">
     <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Options</button>
-    <ul class="dropdown-menu" id="dropmenu">
-      <?php
-        $categoriesJson = file_get_contents('data/category.json');
-        $categories = json_decode($categoriesJson, true)['category'];
-        foreach ($categories as $category) {
-          echo '<li><a class="dropdown-item" href="?category=' . $category . '">' . $category . '</a></li>';
-        }
-      ?>
-    </ul>
+    
+     <ul class="dropdown-menu" id="dropmenu"></ul> 
   </div>
-  <?php
-    if (isset($_GET['category'])) {
-      echo $showData; 
-    } 
-    else {
-      echo '';
-    }
-  ?>
 </div>
 </div>
     <div class="container">
