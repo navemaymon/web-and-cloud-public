@@ -80,7 +80,7 @@
                   echo        '<img src="' . $img . '"class="card-img-top">';
                   echo        '<div class="card-body">';
                   echo          '<h5 class="card-title text-center">' . $row["name_books"] . '</h5>';
-                  echo        '<div class="card-footer text-center"><a href="getbookweek.php?bookId=' . $row["id"] . '"class="btn btn-primary">More details!</a>';
+                  echo        '<div class="card-footer text-center"><a href="getbookweek.php?bookId="' . $row["id"] . '"class="btn btn-primary">More details!</a>';
                   echo '</div></div></div>';
                   }
                 ?>
