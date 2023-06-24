@@ -75,7 +75,7 @@
     <ul class="dropdown-menu" id="dropmenu">
       <?php
         $categoriesJson = file_get_contents('data/category.json');
-        $categories = json_decode($categoriesJson, true)['categories'];
+        $categories = json_decode($categoriesJson, true)['category'];
         foreach ($categories as $category) {
           echo '<li><a class="dropdown-item" href="?category=' . $category . '">' . $category . '</a></li>';
         }
