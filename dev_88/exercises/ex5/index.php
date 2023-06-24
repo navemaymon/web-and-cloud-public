@@ -87,6 +87,7 @@
       echo $showData; 
     } 
     else {
+      echo '';
     }
   ?>
 </div>
