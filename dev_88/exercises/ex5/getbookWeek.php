@@ -1,9 +1,7 @@
 <?php
   include 'db.php';
-
   $query  = "SELECT * FROM tbl_88_books WHERE id=".$_GET["bookId"];
   $result = mysqli_query($connection, $query);
-
   if(!$result) { 
   die("can not connect to the databace");
 }
@@ -23,8 +21,7 @@
   <title>Get Book Week - Nave Maymon</title>
 </head>
 <body>
-  <header>
-  </header>
+  <header></header>
   <nav class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="container-fluid">
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03"

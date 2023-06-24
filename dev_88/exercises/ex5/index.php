@@ -2,7 +2,6 @@
   include "db.php";
   $query = "SELECT * FROM tbl_88_books";
   $result = mysqli_query($connection, $query);
-
   if (isset($_GET["category"])) {
     $showData = $_GET["category"];
     echo $showData;
@@ -15,18 +14,17 @@
     $query = "SELECT * FROM tbl_88_books";
   }
   $result = mysqli_query($connection, $query);
-
   if(!$result) {
   die("can not connect to the DATA BASE");
   }
 ?>
 <?php if (isset($_GET['category'])) {
                 echo $showData;
-                                }
-            else {
-                 echo '';
-                          } 
-      ?>
+      }
+      else {
+        echo '';
+          } 
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -43,8 +41,7 @@
   <title>Book Week - Nave Maymon</title>
 </head>
 <body>
-  <header>
-  </header>
+  <header></header>
   <nav class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="container-fluid">
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03"
@@ -72,57 +69,27 @@
   <br>
   <h2>Recommended books for you</h2>
   <br>
-  <h5>Select a category:</h5>
+  <h5>Select a category</h5>
   <div class="dropdown">
     <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Options</button>
     <ul class="dropdown-menu" id="dropmenu">
       <?php
-        // Read categories from the JSON file
-        $categoriesJson = file_get_contents('data/categories.json');
+        $categoriesJson = file_get_contents('data/category.json');
         $categories = json_decode($categoriesJson, true)['categories'];
-
-        // Generate dropdown options
         foreach ($categories as $category) {
           echo '<li><a class="dropdown-item" href="?category=' . $category . '">' . $category . '</a></li>';
         }
       ?>
     </ul>
   </div>
-
   <?php
     if (isset($_GET['category'])) {
-      echo $showData; // Display book data for the selected category
-    } else {
-      echo '';
+      echo $showData; 
+    } 
+    else {
     }
   ?>
 </div>
-
-    <!-- <div class="container">
-    <br><h2>Recommended books for you</h2><br>
-    <h5>Select a category:</h5>
-    <div class="dropdown">
-      <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Options</button>
-      <ul class="dropdown-menu" id="dropmenu"> -->
-        <!-- <?php
-            // // Read categories from the JSON file
-            // $categoriesJson = file_get_contents('categories.json');
-            // $categories = json_decode($categoriesJson, true)['categories'];
-
-            // // Generate dropdown options
-            // foreach ($categories as $category) {
-            //   echo '<li><a class="dropdown-item" href="?category=' . $category . '">' . $category . '</a></li>';
-           //  }
-          ?> -->
-      <!-- </ul> -->
-  <!-- </div> -->
-  <?php
-    // if (isset($_GET['category'])) {
-    //   echo $showData; // Display book data for the selected category
-    // } else {
-    //   echo '';
-    // }
-  ?>
 </div>
     <div class="container">
       <div class="row justify-content-center">
