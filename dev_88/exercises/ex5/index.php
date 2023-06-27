@@ -62,8 +62,7 @@
   <h5>Select a category</h5>
   <div class="dropdown">
     <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Options</button>
-    
-     <ul class="dropdown-menu" id="dropmenu"></ul> 
+    <ul class="dropdown-menu" id="dropmenu"></ul> 
   </div>
 </div>
 </div>
